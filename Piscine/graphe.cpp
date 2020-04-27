@@ -10,10 +10,8 @@ Graphe::Graphe(std::string nomFichiertopo,std::string nomFichierpond)           
     if (!ifs)
         std::cout<<"pb d'ouverture ou nom du fichier\n";
 
-        double id;
 
-    if(nomFichierpond == "vide")
-    {
+
         ifs >> m_orient;                            //lecture de l'orientation
         if ( ifs.fail() )
             std::cout << "pb de lecture orientation\n";
@@ -33,7 +31,7 @@ Graphe::Graphe(std::string nomFichiertopo,std::string nomFichierpond)           
         if ( ifs.fail() )
             std::cout<<"pb de lecture taille\n";
 
-        double num1,num2;
+        double num1,num2,id;
         std::string ligne;
 
         for (int i=0; i<taille; ++i)
@@ -49,9 +47,8 @@ Graphe::Graphe(std::string nomFichiertopo,std::string nomFichierpond)           
             if(!m_orient)
                 m_sommets[num2]->ajouterSucc(m_sommets[num1]);
         }
-    }
 
-    else
+    if(nomFichierpond != "vide")
     {
         std::ifstream ifs2{nomFichiertopo};              //lecture du fichier
         if (!ifs2)
