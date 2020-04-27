@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1000" height="800">
 
-<line x1="200" y1="100" x2="200" y2="100" stroke="green" />
-<line x1="200" y1="100" x2="200" y2="100" stroke="green" />
-<line x1="100" y1="200" x2="100" y2="200" stroke="green" />
-<line x1="100" y1="200" x2="100" y2="200" stroke="green" />
-<line x1="200" y1="200" x2="200" y2="200" stroke="green" />
-<line x1="200" y1="200" x2="200" y2="200" stroke="green" />
-<line x1="300" y1="200" x2="300" y2="200" stroke="green" />
-<line x1="300" y1="200" x2="300" y2="200" stroke="green" />
-<line x1="200" y1="300" x2="200" y2="300" stroke="green" />
-<line x1="200" y1="300" x2="200" y2="300" stroke="green" />
+<line x1="190" y1="90" x2="210" y2="110" stroke="black" />
+<line x1="190" y1="110" x2="210" y2="90" stroke="black" />
+<circle cx="200" cy="100" r="5" fill="none" stroke="green" stroke-width="1" />
+<text x="195" y="90" fill="red" >A</text>
+<line x1="90" y1="190" x2="110" y2="210" stroke="black" />
+<line x1="90" y1="210" x2="110" y2="190" stroke="black" />
+<circle cx="100" cy="200" r="5" fill="none" stroke="green" stroke-width="1" />
+<text x="95" y="190" fill="red" >B</text>
+<line x1="190" y1="190" x2="210" y2="210" stroke="black" />
+<line x1="190" y1="210" x2="210" y2="190" stroke="black" />
+<circle cx="200" cy="200" r="5" fill="none" stroke="green" stroke-width="1" />
+<text x="195" y="190" fill="red" >C</text>
+<line x1="290" y1="190" x2="310" y2="210" stroke="black" />
+<line x1="290" y1="210" x2="310" y2="190" stroke="black" />
+<circle cx="300" cy="200" r="5" fill="none" stroke="green" stroke-width="1" />
+<text x="295" y="190" fill="red" >D</text>
+<line x1="190" y1="290" x2="210" y2="310" stroke="black" />
+<line x1="190" y1="310" x2="210" y2="290" stroke="black" />
+<circle cx="200" cy="300" r="5" fill="none" stroke="green" stroke-width="1" />
+<text x="195" y="290" fill="red" >E</text>
+<line x1="200" y1="100" x2="200" y2="200" stroke="black" />
+<line x1="100" y1="200" x2="200" y2="200" stroke="black" />
+<line x1="200" y1="200" x2="300" y2="200" stroke="black" />
+<line x1="200" y1="200" x2="200" y2="300" stroke="black" />
 
 
 </svg>

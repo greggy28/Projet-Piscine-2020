@@ -31,7 +31,8 @@ Graphe::Graphe(std::string nomFichiertopo,std::string nomFichierpond)           
     if ( ifs.fail() )
         std::cout<<"pb de lecture taille\n";
 
-    double num1,num2,idT,idP;
+    double idT,idP;
+    int num1,num2;
     std::string ligne;
 
     for (int i=0; i<taille; ++i)
@@ -119,8 +120,16 @@ void Graphe::afficherGrapheSvg(Svgfile* svgout) const
         m_sommets[i]->afficherSommetSvg(svgout);
     }
 
+double x1,x2,y1,y2;
+
     for(size_t i=0; i<m_aretes.size(); ++i)
     {
-        m_aretes[i]->afficherAreteSvg(svgout);
+                x1 = m_sommets[m_aretes[i]->get_Num1()]->getX();
+                y1 = m_sommets[m_aretes[i]->get_Num1()]->getY();
+
+                x2 = m_sommets[m_aretes[i]->get_Num2()]->getX();
+                y2 = m_sommets[m_aretes[i]->get_Num2()]->getY();
+
+        svgout->addLine(x1*100,y1*100,x2*100,y2*100,"black");
     }
 }

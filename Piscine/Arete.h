@@ -6,14 +6,23 @@
 class Arete
 {
 private:
-    double m_id, m_num1, m_num2, m_poids;
+    double m_id, m_poids;
+    int m_num1, m_num2;
 
 public:
-    Arete(double& id, double& num1, double& num2, double& poids);
+    Arete(double& id, int& num1, int& num2, double& poids);
 
     ~Arete();
 
-    void afficherAreteSvg(Svgfile* svgout) const;
+    int get_Num1() const
+    {
+        return m_num1;
+    }
+
+    int get_Num2() const
+    {
+        return m_num2;
+    }
 };
 
 #endif // ARETE_H_INCLUDED
