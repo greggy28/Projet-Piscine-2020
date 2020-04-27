@@ -2,7 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-
+#include <string>
 
 Graphe::Graphe(std::string nomFichiertopo,std::string nomFichierpond)              //constructeur
 {
@@ -34,12 +34,14 @@ Graphe::Graphe(std::string nomFichiertopo,std::string nomFichierpond)           
             std::cout<<"pb de lecture taille\n";
 
         double num1,num2;
+        std::string ligne;
 
         for (int i=0; i<taille; ++i)
         {
-            m_aretes.push_back( new Arete(ifs) );
+            ifs >> id >> num1 >> num2;                          //lecture des ID des arêtes
 
-            ifs >> num1 >> num2;                //lecture des ID des arêtes
+            m_aretes.push_back( new Arete(id,num1,num2) );
+
             m_sommets[num1]->ajouterSucc(m_sommets[num2]);      //création du successeur de sommet
 
             ///si le graphe n'est pas orienté
@@ -64,9 +66,7 @@ Graphe::Graphe(std::string nomFichiertopo,std::string nomFichierpond)           
         for (int i=0; i<taille; ++i)
         {
             ifs2 >> id >> poids;                 //lecture des ID des arêtes et du poids de chacune
-
         }
-
     }
 }
 
