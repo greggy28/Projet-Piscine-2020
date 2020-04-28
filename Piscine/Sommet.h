@@ -40,7 +40,7 @@ public:
 
     void afficherVoisins() const;                               //fonction d'affichage de successeurs
 
-    void afficherSommetSvg(Svgfile* svgout) const;
+    void afficherSommetSvg(Svgfile* svgout) const;              //fonction d'affichage SVG
 };
 
 #endif // SOMMET_H_INCLUDED

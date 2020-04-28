@@ -10,9 +10,9 @@ private:
     int m_num1, m_num2;
 
 public:
-    Arete(double& id, int& num1, int& num2, double& poids);
+    Arete(double& id, int& num1, int& num2, double& poids);     //constructeur
 
-    ~Arete();
+    ~Arete();                       //destructeur
 
     int get_Num1() const
     {
@@ -22,6 +22,11 @@ public:
     int get_Num2() const
     {
         return m_num2;
+    }
+
+    double get_Poids() const
+    {
+        return m_poids;
     }
 };
 
