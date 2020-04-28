@@ -134,7 +134,7 @@ double x1,x2,y1,y2;
         svgout->addText( ((x1*100)+(x2*100))/2 , ((y1*100)+(y2*100))/2 , m_aretes[i]->get_Poids() , "purple");
     }
 }
-
+/*
 std::vector<int> Graphe::rechercheDijkstra(double num_F)   //algorithme de DIJKSTRA
 {
 
@@ -191,12 +191,13 @@ std::vector<int> Graphe::rechercheDijkstra(double num_F)   //algorithme de DIJKS
     }
     return preds;
 }
-
+*/
 
 /*
 sous-programme qui affiche une arborescence
 params : sommet initial (racine), vecteur de prédécesseur
 */
+/*
 void Graphe::afficher_parcours(double num1, double num2, const std::vector<int>& arbre)
 {
 
@@ -230,12 +231,13 @@ void Graphe::afficher_parcours(double num1, double num2, const std::vector<int>&
         std::cout << "somme : " << somme;
     }
 }
-
+*/
 /*
 parcours BFS
 entrée = le numéro du sommet initial (on pourrait passer un pointeur sur ...)
 retour : le tableau de prédecesseurs (pour retrouver les chemins)
 */
+/*
 std::vector<int> Graphe::BFS(int num_s0)const
 {
     /// déclaration de la file
@@ -274,3 +276,4 @@ std::vector<int> Graphe::BFS(int num_s0)const
     }
     return preds;
 }
+*/

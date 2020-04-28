@@ -110,3 +110,57 @@
 	"Arete.h"
 	"svgfile.h"
 
+1588065220 ated upstream
+
+1588063833 source:c:\users\grego\documents\github\projet-piscine-2020\arete.cpp
+	"Arete.h"
+	<fstream>
+	<iostream>
+
+1588063833 c:\users\grego\documents\github\projet-piscine-2020\arete.h
+	<fstream>
+	"svgfile.h"
+
+1588063814 c:\users\grego\documents\github\projet-piscine-2020\svgfile.h
+	<string>
+	<fstream>
+	<set>
+
+1588067410 source:c:\users\grego\documents\github\projet-piscine-2020\graphe.cpp
+	"Graphe.h"
+	<iostream>
+	<fstream>
+	<vector>
+	<string>
+	<queue>
+
+1588067490 c:\users\grego\documents\github\projet-piscine-2020\graphe.h
+	<vector>
+	"Sommet.h"
+	"Arete.h"
+	"svgfile.h"
+
+1588063833 c:\users\grego\documents\github\projet-piscine-2020\sommet.h
+	<vector>
+	<fstream>
+	"svgfile.h"
+
+1588063833 source:c:\users\grego\documents\github\projet-piscine-2020\sommet.cpp
+	"Sommet.h"
+	<vector>
+	<iostream>
+	<fstream>
+
+1588063814 source:c:\users\grego\documents\github\projet-piscine-2020\svgfile.cpp
+	"svgfile.h"
+	<iostream>
+	<sstream>
+
+1588067490 source:c:\users\grego\documents\github\projet-piscine-2020\main.cpp
+	<iostream>
+	"Graphe.h"
+	"Svgfile.h"
+	<string>
+
+1588066861 shed changes
+

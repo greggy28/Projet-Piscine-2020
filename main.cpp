@@ -87,19 +87,7 @@ void menu()             //menu
 
         case 3:
         {
-            double id1,id2;
-            std::cout << std::endl << "PCC avec dji:";
-            std::cout << std::endl << "Identifiant sommet de depart :";             //on demande le sommet de départ
-            std::cin >> id1;
-            std::cout << std::endl << "Identifiant sommet d'arrivee :";             //on demande le sommet d'arrivée
-            std::cin >> id2;
-            std::vector<int> arbre = g.rechercheDijkstra(id1);
-            g.afficher_parcours(id1,id2,arbre);
-
-            std::cout << std::endl << "PCC avec BFS";
-            ///affichage du plus court chemin
-            std::cout << std::endl << "parcours a partir du sommet " << id1 << " jusqu'au sommet " << id2 << std::endl;
-            g.afficher_parcours(id1,id2,arbre);
+            std::cout << "3_OK" << std::endl;
         }
         break;
 
