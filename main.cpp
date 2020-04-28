@@ -13,7 +13,7 @@ void menu()             //menu
     do
     {
         std::cout << std::endl << "------- MENU -------" << std::endl;
-        std::cout << std::endl << "1. Charger un graphe\n"
+        std::cout << std::endl << "1. Charger un nouveau graphe ou ponderation\n"
                   "2. Changer le systeme de ponderation d'un graphe\n"
                   "3. Calculer l'indice de centralite\n"
                   "4. Tester la vulnerabilite\n"
@@ -47,10 +47,10 @@ void menu()             //menu
         {
         case 1:                         //choix 1 : chargement d'une pondération
         {
-            std::cout << "Voulez-vous ouvrir un fichier de ponderation (OUI/NON) ?\n";
+            std::cout << "Voulez-vous ouvrir un nouveau fichier (OUI_G/OUI_P/NON) ?\n";
             std::cin >> choix2;
 
-            while((choix2 != "OUI")&&(choix2 != "NON"))
+            while((choix2 != "OUI_G")&&(choix2 != "NON")&&(choix2 != "OUI_P"))
             {
                 std::cout << "Ne correspond pas a un choix possible\n"
                           "Veuillez ressaisir votre choix" << std::endl;
@@ -58,7 +58,14 @@ void menu()             //menu
                 std::cin >> choix2;
             }
 
-            if(choix2 == "OUI")
+            if(choix2 == "OUI_G")
+            {
+                std::cout << "Vous souhaitez charger un nouveau graphe\n"
+                          "Veuillez choisir le nom du fichier (topologie) en .txt" << std::endl;
+                std::cin >> nom;
+            }
+
+            if(choix2 == "OUI_P")
             {
                 std::cout << "Vous souhaitez charger une ponderation\n"
                           "Veuillez choisir le nom du fichier (ponderation) en .txt" << std::endl;
