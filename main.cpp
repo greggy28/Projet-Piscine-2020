@@ -47,10 +47,10 @@ void menu()             //menu
         {
         case 1:                         //choix 1 : chargement d'une pondération
         {
-            std::cout << "Voulez-vous ouvrir un fichier de ponderation (OUI/NON) ?\n";
+            std::cout << "Voulez-vous ouvrir un nouveau fichier (OUI_G/OUI_P/NON) ?\n";
             std::cin >> choix2;
 
-            while((choix2 != "OUI")&&(choix2 != "NON"))
+            while((choix2 != "OUI_P")&&(choix2 != "NON")&&(choix2 != "OUI_G"))
             {
                 std::cout << "Ne correspond pas a un choix possible\n"
                           "Veuillez ressaisir votre choix" << std::endl;
@@ -58,7 +58,14 @@ void menu()             //menu
                 std::cin >> choix2;
             }
 
-            if(choix2 == "OUI")
+            if(choix2 == "OUI_G")
+            {
+                std::cout << "Vous souhaitez charger un graphe\n"
+                          "Veuillez choisir le nom du fichier (topologie) en .txt" << std::endl;
+                std::cin >> nom;
+            }
+
+            if(choix2 == "OUI_P")
             {
                 std::cout << "Vous souhaitez charger une ponderation\n"
                           "Veuillez choisir le nom du fichier (ponderation) en .txt" << std::endl;
