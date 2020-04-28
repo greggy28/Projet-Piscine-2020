@@ -86,7 +86,7 @@ void menu()             //menu
         break;
 
         case 3:
-        {
+        {/*
             double id1,id2;
             std::cout << std::endl << "PCC avec dji:";
             std::cout << std::endl << "Identifiant sommet de depart :";             //on demande le sommet de départ
@@ -99,7 +99,7 @@ void menu()             //menu
             std::cout << std::endl << "PCC avec BFS";
             ///affichage du plus court chemin
             std::cout << std::endl << "parcours a partir du sommet " << id1 << " jusqu'au sommet " << id2 << std::endl;
-            g.afficher_parcours(id1,id2,arbre);
+            g.afficher_parcours(id1,id2,arbre);*/
         }
         break;
 
